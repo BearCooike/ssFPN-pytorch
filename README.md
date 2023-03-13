@@ -2,7 +2,7 @@
 
 by Hye-Jin Park, Young-Ju Choi, Young-Woon Lee, Byung-Gyu Kim
 
-![image-20230313103158175](ssFPN.png)
+![ssFPN](ssFPN.png)
 
 This is an unofficial implementation of [“ssFPN: Scale Sequence (S^2) Feature Based-Feature Pyramid Network for Object Detection](https://arxiv.org/abs/2208.11533v2)”
 
@@ -21,3 +21,5 @@ My private dataset contains 8w images taken with real-world 1080P cameras, total
 | Baseline(YoloV5)                | 384x640          | MX450 | 15-21            |
 | Baseline + SpaceToDepth                | 384x640          | MX450 | 15-18            |
 | Baseline + SpaceToDepth + ssFPN | 384x640          | MX450 | 27-30            |
+
+![v5ssFPN](v5ssFPN.png)

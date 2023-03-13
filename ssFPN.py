@@ -12,7 +12,8 @@ class ssFPN(nn.Module):
         self.act = nn.LeakyReLU(inplace=True) if act else nn.Identity()
         self.avg_pool = nn.AvgPool3d((3,1,1))
 
-    def forward(self, p3, p4, p5):  # x(b,c,w,h) -> y(b,4c,w/2,h/2)
+    def forward(self, x):
+        p3, p4, p5 = x
         x = torch.cat([p3, self.upx2(p4), self.upx4(p5)],1).unsqueeze(2)
         x = self.act(self.bn(self.conv(x)))
         return self.avg_pool(x).squeeze(2)

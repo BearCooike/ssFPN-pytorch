@@ -13,11 +13,11 @@ My private dataset contains 8w images taken with real-world 1080P cameras, total
 | Model                           | pre-train  | epochs | mAP.5 | mAP.5:.95 |
 | ------------------------------- | ---------- | ------ | ----- | --------- |
 | Baseline(YoloV5)                | yolov5s.pt | 150    | 0.901 | 0.655     |
-| Baseline + ssFPN                | yolov5s.pt | 150    | 0.901 | 0.657     |
+| Baseline + SpaceToDepth                | yolov5s.pt | 150    | 0.901 | 0.657     |
 | Baseline + SpaceToDepth + ssFPN | yolov5s.pt | 150    | 0.909 | 0.674     |
 
 | Model                           | resolution ratio | GPU   | FP16 latency(ms) |
 | ------------------------------- | ---------------- | ----- | ---------------- |
 | Baseline(YoloV5)                | 384x640          | MX450 | 15-21            |
-| Baseline + ssFPN                | 384x640          | MX450 | 15-18            |
+| Baseline + SpaceToDepth                | 384x640          | MX450 | 15-18            |
 | Baseline + SpaceToDepth + ssFPN | 384x640          | MX450 | 27-30            |

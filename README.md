@@ -8,7 +8,7 @@ This is an unofficial implementation of [“ssFPN: Scale Sequence (S^2) Feature 
 
 The implementation was only trained and tested on my private dataset due to resource and time issues
 
-My private dataset contains 8w images taken with real-world 1080P cameras, totaling 26 categories.
+My private dataset contains 8w images taken with real-world 1080P cameras, totaling 26 categories.  
 PS: MultiScale Training is not used on ssFPN because of training memory issues.
 
 | Model                           | pre-train  | epochs | mAP.5 | mAP.5:.95 |

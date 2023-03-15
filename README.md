@@ -37,4 +37,4 @@ PS: MultiScale Training is not used on ssFPN because of training memory issues.
 
 ![v5ssFPN](v5ssFPN.png)
 
-![v5ssFPN_coco](v5ssFPN_coco.png)
+![v5ssFPN_coco](ssFPN_coco.png)
